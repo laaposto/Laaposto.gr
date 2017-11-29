@@ -1,0 +1,74 @@
+svg.nvd3-svg {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    display: block;
+}
+
+.nvd3 text {
+    font: bold 23px Roboto;
+    fill: #FFF;
+}
+
+.nvd3 .nv-background {
+    fill: #FFF;
+    fill-opacity: 0;
+}
+
+.axis {
+    opacity: 1;
+}
+
+.nvd3 .nv-axis {
+    pointer-events: none;
+}
+
+.nvd3 .nv-axis path {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .75;
+    shape-rendering: crispEdges;
+}
+
+.nvd3 .nv-axis line {
+    fill: none;
+    stroke: #e5e5e5;
+    shape-rendering: crispEdges;
+}
+
+.nvd3 .nv-axis .zero line, /*this selector may not be necessary*/
+.nvd3 .nv-axis line.zero {
+    stroke-opacity: .75;
+}
+
+.nvd3 .nv-multibar .nv-groups rect, .nvd3 .nv-multibarHorizontal .nv-groups rect, .nvd3 .nv-discretebar .nv-groups rect {
+    stroke-opacity: 0;
+    transition: fill-opacity 250ms linear;
+    -moz-transition: fill-opacity 250ms linear;
+    -webkit-transition: fill-opacity 250ms linear;
+}
+
+.nvd3 .nv-multibar .nv-groups rect:hover, .nvd3 .nv-multibarHorizontal .nv-groups rect:hover, .nvd3 .nv-discretebar .nv-groups rect:hover {
+    fill-opacity: 1;
+}
+
+.nvd3 .nv-discretebar .nv-groups text, .nvd3 .nv-multibarHorizontal .nv-groups text {
+    font-weight: 700;
+    fill: rgba(0, 0, 0, 1);
+    stroke: rgba(0, 0, 0, 0);
+}
+
+.nv-group {
+    fill-opacity: 0.9 !important;
+}
+
+.nvd3 .nv-axis path.domain, .nvd3 .nv-axis.nv-x path.domain {
+    stroke-opacity: 0;
+}
+
+.tick line, .nv-zeroLine {
+    display: none;
+}
